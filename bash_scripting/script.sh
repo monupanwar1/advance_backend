@@ -73,3 +73,29 @@
 # echo "hello there"
 # read -r -sp "Enter your password: " password
 # echo "Your password: $password"
+
+
+# # creating file
+
+# echo "creating file" > a.txt
+# cat a.txt
+
+# document
+# cat>a.txt << EOL
+# hello world
+# this is test file
+# we are enjoying
+# EOL
+
+# folders
+
+# mkdir -p {hello,welcome,nice,config}
+
+# string operartion
+
+
+# echo "Hello World">example.txt
+
+# # strem
+
+# sed -i 's/World/Backend/g' example.txt
