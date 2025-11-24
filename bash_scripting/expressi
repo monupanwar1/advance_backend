@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Colors
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+# get project name
+read -r -p "Enter your project name: " project_name
+
+if [[ -z "$project_name" ]]; then
+    echo -e "${RED}Error:Project name can not be empty.${NC}"
+fi
+
+
+# check if project exits
+if [[ -d "$project_name" ]]; then
+    echo -e "${RED}Error:Directory already exits.${NC}"
+fi
+
+# create a folder
+
+echo -e "${BLUE}Creating Project Folder ......${NC}"
+mkdir "${project_name}"
+
+
+echo "${project_name} folder created"
+
